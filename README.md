@@ -25,7 +25,7 @@ can also (officially) convert b/w image formats using imagemagick
 ```
 git init .
 base_name=$(basename $(pwd))
-git remote add github git@github.com:madratman/${base_name}.git
+git remote add github git@github.com:aahiqmuhamed/${base_name}.git
 ```
 
 #### Renaming files (recursively)
@@ -95,4 +95,12 @@ else
   echo "No PPA's to be removed"
   tput sgr0
 fi
+```
+#### Basic vim configuration ~/.vimrc
+
+```
+set tabstop=4 expandtab
+set list
+set listchars=tab:>-
+set mouse=r
 ```
