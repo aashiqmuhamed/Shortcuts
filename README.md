@@ -104,3 +104,6 @@ set list
 set listchars=tab:>-
 set mouse=r
 ```
+
+# Tmux right click to paste
+prefix : set -g mouse off
