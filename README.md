@@ -109,8 +109,9 @@ set mouse=r
 prefix : set -g mouse off
 
 #### Fastai on Google Colab
+```
 !pip install torchvision==0.1.9
 !pip install fastai==0.7.0
 !pip install torchtext==0.2.3
-
+```
 
