@@ -115,3 +115,9 @@ prefix : set -g mouse off
 !pip install torchtext==0.2.3
 ```
 
+#### Delete files from a folder
+/bin/rm: cannot execute [Argument list too long] (https://stackoverflow.com/questions/11289551/argument-list-too-long-error-for-rm-cp-mv-commands)
+```
+for f in *.pdf; do rm "$f"; done
+```
+
