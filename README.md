@@ -120,4 +120,11 @@ prefix : set -g mouse off
 ```
 for f in *.pdf; do rm "$f"; done
 ```
+#### Copy from tmux buffer to system buffer (clipboard)
+For this to happen, you need to install xclip on your computer. Do it as:
 
+```sudo apt-get install --assume-yes xclip```
+After that, you need to add this line in ~/.tmux.conf file:
+
+```bind -t vi-copy y copy-pipe "xclip -sel clip -i"```
+Now close all your tmux sessions. From now onwards, whatever you copy in Tmux buffer will also land into system clipboard.
