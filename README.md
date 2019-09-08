@@ -3,6 +3,10 @@ A collection of various command (one)liners and some useful ingredients to shell
 Some could be perfect examples of [nocontext subreddit](https://www.reddit.com/r/nocontext/) heh, but it means I used them in some project, so..
 Collected from the interwebz mostly. Will give credits if I haven't forgotten the source.  
 
+####  Error when pushing large files to git repo
+Error when pushing : "error: RPC failed; HTTP 401 curl 22 The requested URL returned error: 401"
+Use ```git config --global --unset http.postBuffer```
+
 #### Random 
 - basename of current directory    
  ```
