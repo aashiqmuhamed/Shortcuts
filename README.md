@@ -132,3 +132,6 @@ After that, you need to add this line in ~/.tmux.conf file:
 
 ```bind -t vi-copy y copy-pipe "xclip -sel clip -i"```
 Now close all your tmux sessions. From now onwards, whatever you copy in Tmux buffer will also land into system clipboard.
+
+#### Jupyter port forwarding
+https://fizzylogic.nl/2017/11/06/edit-jupyter-notebooks-over-ssh/
