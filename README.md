@@ -135,3 +135,6 @@ Now close all your tmux sessions. From now onwards, whatever you copy in Tmux bu
 
 #### Jupyter port forwarding
 https://fizzylogic.nl/2017/11/06/edit-jupyter-notebooks-over-ssh/
+
+#### Docker run with mount
+```docker run -v /host/directory:/container/directory -other -options image_name command_to_run```
