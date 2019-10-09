@@ -29,7 +29,7 @@ can also (officially) convert b/w image formats using imagemagick
 ```
 git init .
 base_name=$(basename $(pwd))
-git remote add github git@github.com:aahiqmuhamed/${base_name}.git
+git remote add github git@github.com:aashiqmuhamed/${base_name}.git
 ```
 
 #### Renaming files (recursively)
