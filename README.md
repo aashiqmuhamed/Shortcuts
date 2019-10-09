@@ -138,3 +138,6 @@ https://fizzylogic.nl/2017/11/06/edit-jupyter-notebooks-over-ssh/
 
 #### Docker run with mount
 ```docker run -v /host/directory:/container/directory -other -options image_name command_to_run```
+
+#### Tensorboard on given port
+``` tensorboard --logdir=/tmp  --port=8008 ```
