@@ -141,3 +141,18 @@ https://fizzylogic.nl/2017/11/06/edit-jupyter-notebooks-over-ssh/
 
 #### Tensorboard on given port
 ``` tensorboard --logdir=/tmp  --port=8008 ```
+
+#### Tmux conf - select and copy text within pane
+I add the following to my ~/.tmux.conf. It will enable CTRL+b M (to turn tmux mouse on) and CTRL+b m (to turn tmux mouse off).
+https://unix.stackexchange.com/questions/478922/tmux-select-and-copy-pane-text-with-mouse
+```
+# Toggle mouse on
+bind-key M \
+  set-option -g mouse on \;\
+  display-message 'Mouse: ON'
+
+# Toggle mouse off
+bind-key m \
+  set-option -g mouse off \;\
+  display-message 'Mouse: OFF'
+  ```
