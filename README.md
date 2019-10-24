@@ -156,3 +156,12 @@ bind-key m \
   set-option -g mouse off \;\
   display-message 'Mouse: OFF'
   ```
+  #### Tmux save and restore
+ Add to ~/.tmux.conf
+ ```
+	
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+ 
+set -g @continuum-restore 'on'
+```
