@@ -164,4 +164,9 @@ set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'tmux-plugins/tmux-continuum'
  
 set -g @continuum-restore 'on'
+run -b '~/.tmux/plugins/tpm/tpm'
+```
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux source ~/.tmux.conf
 ```
