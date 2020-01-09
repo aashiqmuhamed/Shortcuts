@@ -170,3 +170,8 @@ run -b '~/.tmux/plugins/tpm/tpm'
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
+
+#### sshfs remote mount
+```
+sudo sshfs {username}@{ipaddress}:{remote folder path}  {local folder path} -o IdentityFile={full path to the private key file} -o allow_other
+```
