@@ -175,3 +175,6 @@ tmux source ~/.tmux.conf
 ```
 sudo sshfs {username}@{ipaddress}:{remote folder path}  {local folder path} -o IdentityFile={full path to the private key file} -o allow_other
 ```
+#### Use sublime remotely
+
+https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3
