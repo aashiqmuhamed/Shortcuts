@@ -178,3 +178,8 @@ sudo sshfs {username}@{ipaddress}:{remote folder path}  {local folder path} -o I
 #### Use sublime remotely
 
 https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3
+
+### Iteratively copy files of a type to another folder
+```
+find folder_name/ -name '*npz' -exec cp {} ./raw/ \; 
+```
