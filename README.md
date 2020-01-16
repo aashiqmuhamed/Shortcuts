@@ -179,7 +179,11 @@ sudo sshfs {username}@{ipaddress}:{remote folder path}  {local folder path} -o I
 
 https://stackoverflow.com/questions/37458814/how-to-open-remote-files-in-sublime-text-3
 
-### Iteratively copy files of a type to another folder
+#### Iteratively copy files of a type to another folder
 ```
 find folder_name/ -name '*npz' -exec cp {} ./raw/ \; 
+```
+#### Copy files with a given extension to another folder and number them
+```
+find lpd_5 -name "*.npz" |  cat -n | while read n f; do mv -n "$f" "raw/$n.mid"; done
 ```
