@@ -185,5 +185,5 @@ find folder_name/ -name '*npz' -exec cp {} ./raw/ \;
 ```
 #### Copy files with a given extension to another folder and number them
 ```
-find lpd_5 -name "*.npz" |  cat -n | while read n f; do mv -n "$f" "raw/$n.mid"; done
+find lpd_5 -name "*.npz" |  cat -n | while read n f; do cp -n "$f" "raw/$n.mid"; done
 ```
