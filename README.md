@@ -187,3 +187,6 @@ find folder_name/ -name '*npz' -exec cp {} ./raw/ \;
 ```
 find lpd_5 -name "*.npz" |  cat -n | while read n f; do cp -n "$f" "raw/$n.mid"; done
 ```
+
+#### Add ebs volume to ec2 instance
+https://serverfault.com/questions/365605/how-do-i-access-the-attached-volume-in-amazon-ec2
