@@ -190,3 +190,19 @@ find lpd_5 -name "*.npz" |  cat -n | while read n f; do cp -n "$f" "raw/$n.mid";
 
 #### Add ebs volume to ec2 instance
 https://serverfault.com/questions/365605/how-do-i-access-the-attached-volume-in-amazon-ec2
+
+#### Argument list too long
+https://stackoverflow.com/questions/5892339/unix-cp-argument-list-too-long
+```
+for f in $(ls ./00012524/*.pdf)
+do
+    cp $f ./dummy01
+done
+```
+#### Recursively change extension
+```
+for i in $(ls *.t1); 
+do
+    mv "$i" "${i%.t1}.t2" 
+done
+```
