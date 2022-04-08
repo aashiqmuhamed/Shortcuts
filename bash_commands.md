@@ -12,6 +12,6 @@ alias l='ls --color -lhF --group-directories-first'
  ### Shell functions
  
  ```
- func {(echo 1; seq $1) | paste -s -d\* - | bc;}
+ func() {(echo 1; seq $1) | paste -s -d\* - | bc;}
  ```
  
