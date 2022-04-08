@@ -13,5 +13,24 @@ alias l='ls --color -lhF --group-directories-first'
  
  ```
  func() {(echo 1; seq $1) | paste -s -d\* - | bc;}
+ func 5
  ```
+ 
+  ### Using trim to shape output to a specified height/width of characters
+ 
+ ```
+ cat /data/ch07/tips.csv | trim 5 25
+ ```
+  ### Use csvlook to print csv
+ ```
+ csvlook file.csv
+ ```
+ 
+ ### Use bat for cat with syntax highlighting. Add -A for displaying tabs/spaces
+ ```
+ bat -A file.txt
+ ```
+ 
+ 
+ 
  
