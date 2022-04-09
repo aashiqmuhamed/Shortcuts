@@ -1,3 +1,4 @@
+## General UNIX commands
 ### Useful bash aliases
 
 ```
@@ -30,6 +31,20 @@ alias l='ls --color -lhF --group-directories-first'
  ```
  bat -A file.txt
  ```
+ ### Use tee for writing intermediate output to file
+ ```
+ seq 10 | tee num.txt | trim 5
+ ```
+ 
+ ### Use man or --help for manual. Use tldr if too long to read.
+ ```
+ man zshbuiltins | trim
+ jq --help | trim
+ tldr tar | trim
+ ```
+ ## Obtaining data
+ 
+ 
  
  
  
