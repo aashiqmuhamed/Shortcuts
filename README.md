@@ -107,6 +107,12 @@ set tabstop=4 expandtab
 set list
 set listchars=tab:>-
 set mouse=r
+set paste
+```
+
+#### Vim append to end of line
+```
+:%norm A*
 ```
 
 #### Tmux right click to paste
